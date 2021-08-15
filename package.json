@@ -1,0 +1,49 @@
+{
+  "name": "nftea",
+  "version": "1.0.0",
+  "description": "A simple dapp for minting NFTs on IPFS.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakemmarsh/nftea.git"
+  },
+  "keywords": [
+    "nft",
+    "mint",
+    "dapp",
+    "ethereum",
+    "walletconnect",
+    "ipfs"
+  ],
+  "author": "Jake Marsh <jakemmarsh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakemmarsh/nftea/issues"
+  },
+  "homepage": "https://github.com/jakemmarsh/nftea#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit --skipLibCheck && eslint '**/*.{ts,tsx}' --cache --resolve-plugins-relative-to .",
+    "test": "NODE_ENV=test npm run lint"
+  },
+  "dependencies": {
+    "@geist-ui/react": "^2.2.0",
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.18",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.2",
+    "prettier-eslint-cli": "^5.0.1",
+    "shared-git-hooks": "^1.2.1",
+    "typescript": "4.3.5"
+  }
+}

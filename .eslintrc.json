@@ -1,0 +1,65 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      2,
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "assert": "either"
+      }
+    ],
+    "jsx-a11y/no-autofocus": 0,
+    "react/display-name": 0,
+    "react/jsx-boolean-value": [
+      2,
+      "always"
+    ],
+    "react/jsx-fragments": [2, "element"],
+    "react/no-this-in-sfc": 2,
+    "react/no-unescaped-entities": 0,
+    "react/prop-types": 0,
+    "react/self-closing-comp": 2
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*test.*"
+      ],
+      "rules": {
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0
+      }
+    }
+  ]
+}
